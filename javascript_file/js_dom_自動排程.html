@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>自動排程 Schedule</title>
+    <script type="text/JavaScript">
+        var timer;
+        function init(){
+            timer=document.getElementById("timer");
+            // window.setTimeout(countdown, 1000); //在網頁載入後，請系統在一秒之後，跑出countown函式 (以毫秒表示)
+            // 如果是setInterval就無序重複setTimeout指令
+            window.setInterval(countdown, 1000);
+        }
+        function countdown(){
+            timer.innerHTML = timer.innerHTML-1;
+            if(timer.innerHTML>0){
+                // window.setTimeout(countdown, 1000);
+
+            }else{
+                document.location="https://medium.com/@johnliutw/list/da301cc31b15";
+
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="init();">
+    <span id="timer">3</span>
+
+</body>
+
+
+</html>

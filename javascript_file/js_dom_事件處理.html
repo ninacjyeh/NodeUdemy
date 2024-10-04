@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Event 事件處理</title>
+    <script type="text/JavaScript">
+        function over(element){
+            element.style.color="red";
+
+        }
+        function out(element){
+            element.style.color="black";
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="alert('Clicked');">Click</button>
+    <span onmouseover="over(this);" onmouseout="out(this);">Text</span>
+    <div onmouseover="over(this);" onmouseout="out(this);">Select this</div>
+</body>
+
+</html>

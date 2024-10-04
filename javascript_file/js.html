@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <mata charset="utf-8"></mata>
+    <title>JavaScript</title>
+    <script type="text/JavaScript">
+        // alert('Hello World'); // 一行命令
+        // var x = 15*15;
+        // alert(x);
+        // x++; //單元運算
+        // alert(x);
+
+        // var money = prompt("要提領多少錢？", "");
+        // if (money>30000){
+        //     alert("超過領取上限金額！");
+        // }
+
+        var n1 = prompt("請輸入數字",''); //需把字串轉換成數字型態！！
+        var n2 = prompt("請輸入數字",'');
+        n1 = Number(n1);
+        n2 = Number(n2);
+        var op = prompt("運算子: + - * /",'');
+        var result;
+        if (op=='+'){
+            result=n1+n2;
+        }else if(op=='-'){
+            result=n1-n2;
+        }else if(op=='*'){
+            result=n1*n2;
+        }else if(op=='/'){
+            result=n1/n2;
+        }else{
+            result="不合法之運算符";
+        }
+        alert(result);
+
+        // var x=0;
+        // for(var n=0; n<=100; n++){
+        //     if(n%4==0){
+        //         continue;
+        //     }
+        //     x++;
+        // }
+        // alert(x);
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

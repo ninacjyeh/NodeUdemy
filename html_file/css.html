@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!--
+CSS 用於網頁排版
+-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    </meta>
+    <title>CSS 教學</title>
+    <!--css 選擇器（集中管理）用class指定設定-->
+    <style type="text/css">
+        .title {
+            font-weight: bold;
+            font-size: 20px
+        }
+
+        .content {
+            width: 400px;
+            height: 200px;
+            padding: 10px;
+            border: 1px dashed orange;
+            margin-top: 10px;
+            margin-bottom: 10px
+        }
+
+        .keyword {
+            color: blue
+        }
+
+        .box1 {
+            position: absolute;
+            /*絕對定位：會獨立於一般定位模式，不受撰寫順序影響*/
+            right: 200px;
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow
+        }
+
+        .box2 {
+            position: relative;
+            /*相對定位：以原始撰寫位置為基準，做相對定位*/
+            left: 200px;
+            top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: green
+        }
+    </style>
+</head>
+
+<body>
+    <!--div 這是一個區塊-->
+    <div class="title">這是CSS初學</div>
+    <!--中間卡div會造成換行-->
+    <!--span 行內-->
+    <div class="content">
+        我想<span class="keyword">轉職</span>成功<br />
+        加油加油！
+        <!--margin 行高-->
+        <!--border 邊匡-->
+        <!--padding 邊匡內距離-->
+        <!--width height 只能設定在div中-->
+    </div>
+    <div style="font-weight:bold; font-size:20px">這是第二份內容</div>
+    <div style="width:400px; height:200px; padding:10px; border:1px dashed orange; margin-top:10px; margin-bottom:10px">
+        在第二個<span style="color:blue">box</span>裡面<br />
+        <span class="keyword">加油加油！</span>
+    </div>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="content">
+        在第二個<span class="keyword">box</span>裡面<br />
+        加油<span style="position: relative; top: -8px;">加油！</span>
+    </div>
+
+</body>
+
+</html>

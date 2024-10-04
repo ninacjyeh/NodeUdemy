@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML DOM</title>
+    <script type="text/JavaScript">
+        function change(){
+            //window.document.body.innerHTML="Heloo World"; 直接對網頁內文修改
+            var spanObj = window.document.getElementById("emotion"); //window可以省略～～
+            spanObj.innerHTML = "bad";
+            spanObj.style.color = "blue";
+            spanObj.style.fontWeight = "bold";
+            spanObj.style.display = "none"; //這樣一來該span會被隱藏
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        Today is a <span id="emotion">good</span> day. Let's go to movie.
+    </div>
+    <button onclick="change();">Change</button>
+</body>
+
+</html>
